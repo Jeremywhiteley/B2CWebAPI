@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 
 namespace B2CWebApi
 {
@@ -54,10 +55,24 @@ namespace B2CWebApi
                 Authority = string.Format("https://login.microsoftonline.com/tfp/{0}/{1}/v2.0/", 
                     Configuration["Authentication:AzureAd:Tenant"], Configuration["Authentication:AzureAd:Policy"]),
                 Audience = Configuration["Authentication:AzureAd:ClientId"],
+				AutomaticAuthenticate = true,
+				AutomaticChallenge = true,
                 Events = new JwtBearerEvents
                 {
                     OnAuthenticationFailed = AuthenticationFailed
-                }            
+                },
+				TokenValidationParameters = new TokenValidationParameters
+				{
+					//The audience must match
+					ValidateAudience = true,
+					ValidAudience = Configuration["Authentication:AzureAd:ClientId"],
+
+					//Token must still be valid
+					ValidateLifetime = true,
+
+					// The signing key must match
+					ValidateIssuerSigningKey = true,
+				}            
             });
 
             ScopeRead = Configuration["Authentication:AzureAd:ScopeRead"];
