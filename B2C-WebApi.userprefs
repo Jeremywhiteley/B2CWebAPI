@@ -3,10 +3,10 @@
     <Files>
       <File FileName="B2C-WebApi/appsettings.Development.json" Line="1" Column="1" />
       <File FileName="B2C-WebApi/appsettings.json" Line="5" Column="56" />
-      <File FileName="B2C-WebApi/Program.cs" Line="1" Column="1" />
-      <File FileName="B2C-WebApi/Startup.cs" Line="19" Column="41" />
-      <File FileName="B2C-WebApi/Controllers/HomeController.cs" Line="1" Column="1" />
-      <File FileName="B2C-WebApi/Controllers/ValuesController.cs" Line="1" Column="1" />
+      <File FileName="B2C-WebApi/Program.cs" Line="12" Column="6" />
+      <File FileName="B2C-WebApi/Startup.cs" Line="22" Column="13" />
+      <File FileName="B2C-WebApi/Controllers/HomeController.cs" Line="3" Column="21" />
+      <File FileName="B2C-WebApi/Controllers/ValuesController.cs" Line="29" Column="130" />
       <File FileName="B2C-WebApi/Views/Home/Index.cshtml" Line="7" Column="318" />
     </Files>
   </MonoDevelop.Ide.Workbench>
@@ -14,7 +14,10 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/dhiru/Desktop/MedText/NewB2cWebAPIClone/B2CWebAPI/B2C-WebApi/Controllers/ValuesController.cs" relfile="B2C-WebApi/Controllers/ValuesController.cs" line="197" column="1" />
+      <Breakpoint file="/Users/dhiru/Desktop/MedText/NewB2cWebAPIClone/B2CWebAPI/B2C-WebApi/Controllers/ValuesController.cs" relfile="B2C-WebApi/Controllers/ValuesController.cs" line="306" column="1" />
+      <Breakpoint file="/Users/dhiru/Desktop/MedText/NewB2cWebAPIClone/B2CWebAPI/B2C-WebApi/Controllers/ValuesController.cs" relfile="B2C-WebApi/Controllers/ValuesController.cs" line="153" column="1" />
+      <Breakpoint file="/Users/dhiru/Desktop/MedText/NewB2cWebAPIClone/B2CWebAPI/B2C-WebApi/Controllers/ValuesController.cs" relfile="B2C-WebApi/Controllers/ValuesController.cs" line="163" column="1" />
+      <Breakpoint file="/Users/dhiru/Desktop/MedText/NewB2cWebAPIClone/B2CWebAPI/B2C-WebApi/Controllers/ValuesController.cs" relfile="B2C-WebApi/Controllers/ValuesController.cs" line="160" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

@@ -27,8 +27,13 @@ namespace B2CWebApi.Controllers
 		public string hostURL = "https://b2capidev.azurewebsites.net";
         public static string accURL = "https://b2cdev.documents.azure.com:443/";
         public static string accKey = "4qIWjbeQc3QB8ukxRQXtrYer4VZLVzlwcwXxYVrXt1kqf0s4obpLER49oC3Fx9RTOV2VS9q0vsLCf4S6yAgQTQ==";
-        private static DateTime BeginningOfTime = new DateTime(2017, 1, 1);
 		public static Uri collectionLink;
+
+
+        /// <summary>
+        /// Gets the client.
+        /// </summary>
+        /// <value>The client.</value>
 		public static DocumentClient Client
 		{
 			get
@@ -41,6 +46,11 @@ namespace B2CWebApi.Controllers
 				return _client;
 			}
 		}
+
+        /// <summary>
+        /// Get this instance.
+        /// </summary>
+        /// <returns>The get.</returns>
         [HttpGet]
         public async Task<IActionResult> Get()
         {
@@ -55,6 +65,11 @@ namespace B2CWebApi.Controllers
                 return Unauthorized();
         }
 
+        /// <summary>
+        /// Get the specified id.
+        /// </summary>
+        /// <returns>The get.</returns>
+        /// <param name="id">Identifier.</param>
         // GET api/values/5
         [HttpGet("{id}")]
         public IActionResult Get(int id)
@@ -67,6 +82,11 @@ namespace B2CWebApi.Controllers
                 return Unauthorized();
         }
 
+        /// <summary>
+        /// Post the specified value.
+        /// </summary>
+        /// <returns>The post.</returns>
+        /// <param name="value">Value.</param>
         // POST api/values
         [HttpPost]
         public IActionResult Post([FromBody]string value)
@@ -80,6 +100,12 @@ namespace B2CWebApi.Controllers
                 return Unauthorized();
         }
 
+        /// <summary>
+        /// Put the specified id and value.
+        /// </summary>
+        /// <returns>The put.</returns>
+        /// <param name="id">Identifier.</param>
+        /// <param name="value">Value.</param>
         // PUT api/values/5
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody]string value)
@@ -93,6 +119,12 @@ namespace B2CWebApi.Controllers
                 return Unauthorized();
         }
 
+
+        /// <summary>
+        /// Delete the specified id.
+        /// </summary>
+        /// <returns>The delete.</returns>
+        /// <param name="id">Identifier.</param>
         // DELETE api/values/5
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
@@ -106,6 +138,10 @@ namespace B2CWebApi.Controllers
                 return Unauthorized();
         }
 
+        /// <summary>
+        /// Method for getting the list of TotDoItem list
+        /// </summary>
+        /// <returns>The todo items async.</returns>
 		public async Task<List<TodoItem>> GetTodoItemsAsync()
 		{
 			var Items = new List<TodoItem>();
@@ -127,6 +163,12 @@ namespace B2CWebApi.Controllers
 			return Items;
 		}
 
+        /// <summary>
+        /// Method for saving the totdoitem object
+        /// </summary>
+        /// <returns>The todo item async.</returns>
+        /// <param name="item">Item.</param>
+        /// <param name="isNewItem">If set to <c>true</c> is new item.</param>
 		public async Task<bool> SaveTodoItemAsync(TodoItem item, bool isNewItem = false)
 		{
 			try
@@ -152,18 +194,9 @@ namespace B2CWebApi.Controllers
 		}
     }
 
-	public class PermissionToken
-	{
-		[JsonProperty(PropertyName = "id")]
-		public string Id { get; set; }
-		[JsonProperty(PropertyName = "token")]
-		public string Token { get; set; }
-		[JsonProperty(PropertyName = "expires")]
-		public int Expires { get; set; }
-		[JsonProperty(PropertyName = "userid")]
-		public string UserId { get; set; }
-	}
-
+    /// <summary>
+    /// Todo item.
+    /// </summary>
 	public class TodoItem
 	{
 		[JsonProperty(PropertyName = "id")]

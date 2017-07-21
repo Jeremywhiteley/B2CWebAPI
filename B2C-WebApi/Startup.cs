@@ -18,6 +18,10 @@ namespace B2CWebApi
         public static string ScopeRead;
         public static string ScopeWrite;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="T:B2CWebApi.Startup"/> class.
+        /// </summary>
+        /// <param name="env">Env.</param>
         public Startup(IHostingEnvironment env)
         {
             var builder = new ConfigurationBuilder()
@@ -37,15 +41,26 @@ namespace B2CWebApi
 
         public IConfigurationRoot Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+		/// <summary>
+		///  This method gets called by the runtime. Use this method to add services to the container.
+		/// </summary>
+		/// <param name="services">Services.</param>
+
+		public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
             services.AddMvc();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+		/// <summary>
+		/// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+		/// </summary>
+		/// <returns>The configure.</returns>
+		/// <param name="app">App.</param>
+		/// <param name="env">Env.</param>
+		/// <param name="loggerFactory">Logger factory.</param>
+
+		public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
@@ -85,7 +100,11 @@ namespace B2CWebApi
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
-
+        /// <summary>
+        /// Authentications the failed.
+        /// </summary>
+        /// <returns>The failed.</returns>
+        /// <param name="arg">Argument.</param>
         private Task AuthenticationFailed(AuthenticationFailedContext arg)
         {
             // For debugging purposes only!
