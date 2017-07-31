@@ -1,23 +1,26 @@
-﻿<Properties StartupConfiguration="{4ADDD163-63F7-4BDF-BF3D-1DA02712C491}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+﻿<Properties StartupConfiguration="{4ADDD163-63F7-4BDF-BF3D-1DA02712C491}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="B2C-WebApi/Controllers/ValuesController.cs">
     <Files>
-      <File FileName="B2C-WebApi/appsettings.Development.json" Line="1" Column="1" />
-      <File FileName="B2C-WebApi/appsettings.json" Line="5" Column="56" />
-      <File FileName="B2C-WebApi/Program.cs" Line="12" Column="6" />
-      <File FileName="B2C-WebApi/Startup.cs" Line="22" Column="13" />
-      <File FileName="B2C-WebApi/Controllers/HomeController.cs" Line="3" Column="21" />
-      <File FileName="B2C-WebApi/Controllers/ValuesController.cs" Line="29" Column="130" />
-      <File FileName="B2C-WebApi/Views/Home/Index.cshtml" Line="7" Column="318" />
+      <File FileName="B2C-WebApi/Controllers/ValuesController.cs" Line="375" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.B2C-WebApi PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/dhiru/Desktop/MedText/NewB2cWebAPIClone/B2CWebAPI/B2C-WebApi/Controllers/ValuesController.cs" relfile="B2C-WebApi/Controllers/ValuesController.cs" line="306" column="1" />
-      <Breakpoint file="/Users/dhiru/Desktop/MedText/NewB2cWebAPIClone/B2CWebAPI/B2C-WebApi/Controllers/ValuesController.cs" relfile="B2C-WebApi/Controllers/ValuesController.cs" line="153" column="1" />
-      <Breakpoint file="/Users/dhiru/Desktop/MedText/NewB2cWebAPIClone/B2CWebAPI/B2C-WebApi/Controllers/ValuesController.cs" relfile="B2C-WebApi/Controllers/ValuesController.cs" line="163" column="1" />
-      <Breakpoint file="/Users/dhiru/Desktop/MedText/NewB2cWebAPIClone/B2CWebAPI/B2C-WebApi/Controllers/ValuesController.cs" relfile="B2C-WebApi/Controllers/ValuesController.cs" line="160" column="1" />
+      <Breakpoint file="/Users/dhiru/Desktop/MedText/NewB2cWebAPIClone/B2CWebAPI/B2C-WebApi/Controllers/ValuesController.cs" relfile="B2C-WebApi/Controllers/ValuesController.cs" line="459" column="1" />
+      <Breakpoint file="/Users/dhiru/Desktop/MedText/NewB2cWebAPIClone/B2CWebAPI/B2C-WebApi/Controllers/ValuesController.cs" relfile="B2C-WebApi/Controllers/ValuesController.cs" line="294" column="1" />
+      <Breakpoint file="/Users/dhiru/Desktop/MedText/NewB2cWebAPIClone/B2CWebAPI/B2C-WebApi/Controllers/ValuesController.cs" relfile="B2C-WebApi/Controllers/ValuesController.cs" line="304" column="1" />
+      <Breakpoint file="/Users/dhiru/Desktop/MedText/NewB2cWebAPIClone/B2CWebAPI/B2C-WebApi/Controllers/ValuesController.cs" relfile="B2C-WebApi/Controllers/ValuesController.cs" line="301" column="1" />
+      <Breakpoint file="/Users/dhiru/Desktop/MedText/NewB2cWebAPIClone/B2CWebAPI/B2C-WebApi/Controllers/ValuesController.cs" relfile="B2C-WebApi/Controllers/ValuesController.cs" line="317" column="1" />
+      <Breakpoint file="/Users/dhiru/Desktop/MedText/NewB2cWebAPIClone/B2CWebAPI/B2C-WebApi/Controllers/ValuesController.cs" relfile="B2C-WebApi/Controllers/ValuesController.cs" line="329" column="1" />
+      <Breakpoint file="/Users/dhiru/Desktop/MedText/NewB2cWebAPIClone/B2CWebAPI/B2C-WebApi/Controllers/ValuesController.cs" relfile="B2C-WebApi/Controllers/ValuesController.cs" line="321" column="1" />
+      <Breakpoint file="/Users/dhiru/Desktop/MedText/NewB2cWebAPIClone/B2CWebAPI/B2C-WebApi/Controllers/ValuesController.cs" relfile="B2C-WebApi/Controllers/ValuesController.cs" line="320" column="1" />
+      <Breakpoint file="/Users/dhiru/Desktop/MedText/NewB2cWebAPIClone/B2CWebAPI/B2C-WebApi/Controllers/ValuesController.cs" relfile="B2C-WebApi/Controllers/ValuesController.cs" line="107" column="1" />
+      <Breakpoint file="/Users/dhiru/Desktop/MedText/NewB2cWebAPIClone/B2CWebAPI/B2C-WebApi/Controllers/ValuesController.cs" relfile="B2C-WebApi/Controllers/ValuesController.cs" line="138" column="1" />
+      <Breakpoint file="/Users/dhiru/Desktop/MedText/NewB2cWebAPIClone/B2CWebAPI/B2C-WebApi/Controllers/ValuesController.cs" relfile="B2C-WebApi/Controllers/ValuesController.cs" line="117" column="1" />
+      <Breakpoint file="/Users/dhiru/Desktop/MedText/NewB2cWebAPIClone/B2CWebAPI/B2C-WebApi/Controllers/ValuesController.cs" relfile="B2C-WebApi/Controllers/ValuesController.cs" line="124" column="1" />
+      <Breakpoint file="/Users/dhiru/Desktop/MedText/NewB2cWebAPIClone/B2CWebAPI/B2C-WebApi/Controllers/ValuesController.cs" relfile="B2C-WebApi/Controllers/ValuesController.cs" line="126" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
