@@ -62,9 +62,11 @@ namespace B2CWebApi.Controllers
                     && scopes.Split(' ').Any(s => s.Equals(Startup.ScopeRead)))
             {
                 var res = await GetPermissionByID(tokenStr);
-                if(res!=null){
-
-                    return Ok(res);
+				FeedResponse<Permission> permFeed = await Client.ReadPermissionFeedAsync(UriFactory.CreateUserUri(ValuesController.databaseId, tokenStr));
+                List<Permission> permList = permFeed.ToList();
+                if(permList !=null){
+                    
+                    return Ok(permList);
                 }
 
                 return Ok(null);
@@ -115,7 +117,6 @@ namespace B2CWebApi.Controllers
 
             // Cache it
             await CacheUserPermission(permissionToken);
-
             return permissionToken;
         }
 
@@ -168,7 +169,9 @@ namespace B2CWebApi.Controllers
             Permission permission = null;
             try
             {
+                Uri url = UriFactory.CreatePermissionUri(databaseId, userId, permissionId);
                 permission = await Client.ReadPermissionAsync(UriFactory.CreatePermissionUri(databaseId, userId, permissionId));
+                
             }
             catch (DocumentClientException e)
             {
