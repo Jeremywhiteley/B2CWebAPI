@@ -62,11 +62,11 @@ namespace B2CWebApi.Controllers
                     && scopes.Split(' ').Any(s => s.Equals(Startup.ScopeRead)))
             {
                 var res = await GetPermissionByID(tokenStr);
-				FeedResponse<Permission> permFeed = await Client.ReadPermissionFeedAsync(UriFactory.CreateUserUri(ValuesController.databaseId, tokenStr));
-                List<Permission> permList = permFeed.ToList();
-                if(permList !=null){
+				//FeedResponse<Permission> permFeed = await Client.ReadPermissionFeedAsync(UriFactory.CreateUserUri(ValuesController.databaseId, tokenStr));
+                //List<Permission> permList = permFeed.ToList();
+                if(res !=null){
                     
-                    return Ok(permList);
+                    return Ok(res);
                 }
 
                 return Ok(null);
